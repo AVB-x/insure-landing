@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 120px 20px 120px;
+    font-family: Arial;
+}
+
+.nav .navdiv{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline;
+    padding: 25px;
+    align-items: center;
+    padding-top: 90px;
+
+}
+
+.nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.nav .btn{
+    width: 150px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header{
+    display: flex;
+    background-color: rgb(24, 0, 46);
+    color: #fff;
+    height: 500px;
+}
+
+.header img{
+    position: absolute;
+    top: 150px;
+    padding-left: 650px;
+    width: 490px;
+    height: 550px;
+}
+
+.header .headerdiv h1{
+    padding-left: 120px;
+    width: 35%;
+    font-size: 60px;
+    margin-top: 120px;
+}
+ 
+.header .headerdiv p{
+    padding-left: 120px;
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+
+}
+
+.header .headerdiv .btn{
+    width: 150px;
+    height: 40px;
+    margin-left: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+}
+
+.main{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 300px;
+}
+
+.main h1{
+    font-size: 50px;
+    padding-bottom: 80px;
+}
+
+.main .maindiv{
+    display: flex;
+}
+
+.main .maindiv .maindivdiv{
+    padding-right: 40px;
+}
+
+.main .maindiv .maindivdiv img{
+    width: 70px;
+    margin-bottom: 40px;
+}
+
+.main .maindiv .maindivdiv p{
+    line-height: 1.5;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.section{
+    margin: 80px 120px 80px 120px;
+    background-color: rgb(24, 0, 46);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section h2{
+    font-size: 40px;
+    padding: 40px;
+
+}
+
+.section .btn{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    letter-spacing: 1px;
+    margin: 40px;
+}
+
+.article{
+    background-color: #ebe1e1;
+    padding: 40px 120px 40px 120px;
+}
+
+.article .articlediv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+
+.article .articlediv a{
+    text-decoration: none;
+    padding: 20px;
+}
+
+.article .articlediv ul li{
+    display: inline;
+}
+
+.article .articlefooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article .articlefooter ul li{
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.article .articlefooter p{
+    padding: 50px 20px 20px 0px;
+}
