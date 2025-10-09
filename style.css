@@ -1,14 +1,23 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .nav{
-    background-color: white;
     display: flex;
+    align-items: center;
+    padding: 20px;
     justify-content: space-between;
-    margin: 20px 120px 20px 120px;
-    font-family: Arial;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav img{
+    margin: 0;
+    padding-left: 110px;
 }
 
 .nav .navdiv{
@@ -36,36 +45,37 @@
     height: 40px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-right: 130px;
 }
 
 .header{
     display: flex;
     background-color: rgb(24, 0, 46);
     color: #fff;
-    height: 500px;
+    justify-content: space-around;
 }
 
 .header img{
-    position: absolute;
-    top: 150px;
-    padding-left: 650px;
-    width: 490px;
-    height: 550px;
+    width: 480px;
+    height: 650px;
+    margin-right: 150px;
+    margin-top: 150px;
 }
 
 .header .headerdiv h1{
     padding-left: 120px;
-    width: 35%;
+    width: auto;
     font-size: 60px;
-    margin-top: 120px;
+    margin-top: 250px;
 }
  
 .header .headerdiv p{
     padding-left: 120px;
-    width: 40%;
+    width: auto;
+    margin-right: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
-    line-height: 1.5;
+    line-height: 2;
 
 }
 
@@ -73,6 +83,7 @@
     width: 150px;
     height: 40px;
     margin-left: 120px;
+    margin-bottom: 80px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: transparent;
@@ -170,4 +181,195 @@
 
 .article .articlefooter p{
     padding: 50px 20px 20px 0px;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+}
+
+.nav .navdiv{
+    display: flex;
+    align-items: center;
+}
+
+.nav img{
+    margin: 0;
+    padding-left: 0;
+}
+
+.nav ul li{
+    list-style: none;
+    display: none;
+    padding: 25px;
+    align-items: center;
+    padding-top: 90px;
+
+}
+
+.nav .btn{
+    width: 100px;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 0;
+}
+
+.header{
+    flex-direction: column-reverse;
+    background-color: rgb(24, 0, 46);
+    color: #fff;
+    width: 100%;
+}
+
+.header img{
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.header .headerdiv h1{
+    width: auto;
+    padding-left: 0;
+    font-size: 60px;
+    margin-top: 10px;
+}
+ 
+.header .headerdiv p{
+    padding-left: 0;
+    width: auto;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 2;
+
+}
+
+.header .headerdiv .btn{
+    width: 150px;
+    height: 40px;
+    margin-left: 120px;
+    margin-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+}
+
+.main{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+}
+
+.main h1{
+    font-size: 50px;
+    padding-bottom: 80px;
+    margin-left: 30px;
+}
+
+.main .maindiv{
+    display: inline-block; 
+}
+
+.main .maindiv .maindivdiv{
+    padding-right: 0;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.main .maindiv .maindivdiv img{
+    width: 70px;
+    margin-bottom: 40px;
+    margin-left: 140px;
+
+}
+
+.main .maindiv .maindivdiv h3{
+    margin-left: 120px;
+
+}
+.main .maindiv .maindivdiv p{
+    line-height: 1.5;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.section{
+    margin: 0;
+    background-color: rgb(24, 0, 46);
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+.section h2{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.section .btn{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    letter-spacing: 1px;
+    margin-left: 120px;
+}
+
+.article{
+    background-color: #ebe1e1;
+    padding: 0;
+}
+
+.article .articlediv{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+
+.article .articlediv .art1{
+    margin-left: 140px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.article .articlediv a{
+    text-decoration: none;
+    padding: 35px;
+    
+}
+
+.article .articlediv ul li{
+    display: inline;
+}
+
+.article .articlefooter{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article .articlefooter ul li{
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.article .articlefooter p{
+    padding: 50px 0 20px 150px;
+}
+
 }
